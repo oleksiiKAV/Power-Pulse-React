@@ -7,9 +7,9 @@ export default defineConfig({
   base: "/Power-Pulse-React",
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
-      "@assets": path.resolve(__dirname, "./src/assets"),
-      "@components": path.resolve(__dirname, "./src/components"),
+      "@": path.resolve(new URL(import.meta.url).pathname, "./src"),
+      "@assets": path.resolve(new URL(import.meta.url).pathname, "./src/assets"),
+      "@components": path.resolve(new URL(import.meta.url).pathname, "./src/components"),
     },
   },
 });
