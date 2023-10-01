@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 
   <Provider store={store}>
     <PersistGate persistor={persistor}>
-      <BrowserRouter basename="/power-pulse-goit">
+      <BrowserRouter basename="/Power-Pulse-React">
         <App />
         <ToastContainer />
       </BrowserRouter>
